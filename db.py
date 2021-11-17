@@ -5,10 +5,12 @@ from sqlalchemy.orm import sessionmaker
 
 # Local host
 #connection_db = "sqlite:///basedatos.db"
-connection_db = "postgresql://ajojygondiwwws:c7a48242d23dfa345fbe78951184ef2b354e8252992dfd68de1781013909bc1d@ec2-54-147-76-191.compute-1.amazonaws.com:5432/dbcpd8j5459210"
+# user:password@host:port/database
+connection_db = "postgresql://cqocmrzsxlmnrg:2c592f3a044258bc81352ae886c711a533aa733e7e05fc165021bb51a18e883d@ec2-44-198-236-169.compute-1.amazonaws.com:5432/d7r14pm8sff829"
 
 Base = declarative_base()
 
 engine = create_engine(connection_db)
 
 Session = sessionmaker(bind=engine)
+
