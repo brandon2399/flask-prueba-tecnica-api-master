@@ -23,14 +23,5 @@ class TipoMascota(db.Model):
     __tablename__='tipo_mascota'
     idtipo_mascota = db.Column(db.Integer,autoincrement=True , primary_key=True)
     descripcion = db.Column(db.String(45))
-    
-'''
-class Mascota(db.Model):
-    __tablename__='ventas'
-    id = db.Column(db.Integer,autoincrement=True , primary_key=True)
-    username_id = db.Column(db.Integer,ForeignKey("usuario.id",ondelete="CASCADE"))
-    venta = db.Column(Integer)
-    ventas_productos = Column(Integer)
-    ventas = relationship('Ventas',backref="usuario",cascade="delete,merge")
-'''
+
 #Base.metadata.create_all(engine)
